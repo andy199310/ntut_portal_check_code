@@ -16,7 +16,7 @@
   "content_scripts": [
     {
       "matches": ["https://nportal.ntut.edu.tw/index.do*"],
-      "js": ["jquery.min.js", "ocrad.js"]
+      "js": ["jquery.min.js"]
     }
   ],
 
