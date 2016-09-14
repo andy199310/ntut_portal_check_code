@@ -1,0 +1,27 @@
+{
+  "manifest_version": 2,
+
+  "name": "NTUT Portal Check Code Auto Complete",
+  "description": "NTUT Portal Check Code Auto Complete",
+  "version": "1.0",
+
+  "browser_action": {
+
+  },
+
+  "background": {
+    "scripts": ["background.js"]
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["https://nportal.ntut.edu.tw/index.do*"],
+      "js": ["jquery.min.js", "ocrad.js"]
+    }
+  ],
+
+  "permissions": [
+    "tabs",
+    "https://nportal.ntut.edu.tw/*"
+  ]
+}
